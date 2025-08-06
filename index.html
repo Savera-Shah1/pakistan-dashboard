@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macroeconomic Dashboard: Pakistan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Navigation Tabs -->
+        <nav class="tab-navigation">
+            <button class="tab-btn active" data-tab="title">Title</button>
+            <button class="tab-btn" data-tab="executive">Executive Summary</button>
+            <button class="tab-btn" data-tab="gdp">GDP & Output</button>
+            <button class="tab-btn" data-tab="inflation">Inflation</button>
+            <button class="tab-btn" data-tab="monetary">Monetary Policy</button>
+            <button class="tab-btn" data-tab="labor">Labor Market</button>
+            <button class="tab-btn" data-tab="fiscal">Fiscal Position</button>
+            <button class="tab-btn" data-tab="external">External Sector</button>
+            <button class="tab-btn" data-tab="financial">Financial Conditions</button>
+            <button class="tab-btn" data-tab="proscons">Pros & Cons</button>
+            <button class="tab-btn" data-tab="outlook">Outlook</button>
+            <button class="tab-btn" data-tab="disclaimer">Disclaimer</button>
+        </nav>
+
+        <!-- Tab Content -->
+        <div class="tab-content-container">
+            <!-- Title Tab -->
+            <div class="tab-content active" id="title">
+                <div class="title-header">
+                    <h1>Macroeconomic Dashboard: PAKISTAN</h1>
+                    <div class="current-indicators">
+                        <div class="indicator">
+                            <span class="label">Policy Rate</span>
+                            <span class="value">11.0%</span>
+                        </div>
+                        <div class="indicator">
+                            <span class="label">Inflation</span>
+                            <span class="value">4.1%</span>
+                        </div>
+                        <div class="indicator">
+                            <span class="label">FX Reserves</span>
+                            <span class="value">$14.5B</span>
+                        </div>
+                        <div class="indicator">
+                            <span class="label">GDP Growth</span>
+                            <span class="value">2.5%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Executive Summary Tab -->
+            <div class="tab-content" id="executive">
+                <h2>Executive Summary</h2>
+                
+                <div class="charts-container">
+                    <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/3141c0bba7b071a6b46c80a8a4761ca2/f5a346b6-73f0-4b91-9ef3-ba3a98526bd7/0a170339.png" alt="Pakistan Key Economic Indicators" class="executive-chart">
+                </div>
+
+                <div class="executive-overview">
+                    <h3>Economic Overview</h3>
+                    <p>Pakistan's economy has undergone significant volatility over the past five years, marked by acute balance of payments crises, unprecedented inflation peaks, and subsequent stabilization efforts. The country's nominal GDP reached $411.0 billion in 2024, recovering from the 2023 contraction when economic output fell to $341.3 billion amid severe external pressures.</p>
+                    
+                    <p><strong>Growth Momentum:</strong> Real GDP growth has shown remarkable resilience despite external shocks. After contracting by -0.2% in 2023 during the acute crisis period, growth recovered to 2.5% in 2024. The economy demonstrated its underlying strength with robust expansions of 5.7% in 2021 and 6.0% in 2022, before the external crisis took hold. The services sector continues to dominate, accounting for 57.8% of GDP in 2024, while agriculture remains substantial at 24.0%, providing crucial stability during volatile periods.</p>
+                    
+                    <p><strong>Inflation Dynamics:</strong> Pakistan experienced one of the most dramatic inflation episodes globally, with headline CPI surging to 29.2% in 2023 from 12.2% in 2022. This surge was driven by currency depreciation, supply-side shocks, and expansionary fiscal policies. However, aggressive monetary tightening and improved external conditions have brought inflation down dramatically to 4.1% by 2024, now approaching the central bank's 5-7% target range.</p>
+                    
+                    <p><strong>Monetary Policy Stance:</strong> The State Bank of Pakistan (SBP) implemented aggressive monetary tightening, raising the policy rate from 7.25% in 2021 to a peak of 22.0% in 2023. With inflation declining rapidly, the central bank began an easing cycle in mid-2024, reducing rates to 11.0% by year-end. This normalization reflects improved inflation expectations and external stability.</p>
+                    
+                    <p><strong>External Headwinds and Tailwinds:</strong> The external sector has been the primary source of volatility. Foreign exchange reserves plummeted from $17.3 billion in 2021 to critically low levels of $4.6 billion in 2022, forcing severe import restrictions. However, IMF support programs, improved current account dynamics, and policy adjustments have restored reserves to $14.5 billion by 2024. The current account achieved a rare surplus of $1.5 billion in 2024, the first positive balance since 2015, reflecting both compressed imports and resilient remittances.</p>
+                </div>
+
+                <div class="timeline-container">
+                    <h3>Key Events Timeline</h3>
+                    <ul class="timeline">
+                        <li><strong>July 2023:</strong> IMF Stand-by Arrangement approved ($3bn) - Provided crucial financial support and policy anchor during crisis.</li>
+                        <li><strong>February 2024:</strong> General elections held - Reduced political uncertainty with coalition government formation.</li>
+                        <li><strong>June 2024:</strong> Policy rate cuts begin from 22% peak - Monetary easing cycle supports economic recovery.</li>
+                        <li><strong>September 2024:</strong> New IMF Extended Fund Facility approved ($7bn) - Long-term support for structural reforms and stability.</li>
+                        <li><strong>Q4 2024:</strong> Current account surplus achieved - First external balance surplus in years signals improvement.</li>
+                    </ul>
+                </div>
+
+                <div class="calendar-container">
+                    <h3>Upcoming Events Calendar</h3>
+                    <div class="calendar-grid">
+                        <div class="calendar-item">
+                            <div class="date">Jan 15</div>
+                            <div class="event">SBP Monetary Policy</div>
+                        </div>
+                        <div class="calendar-item">
+                            <div class="date">Feb 1</div>
+                            <div class="event">CPI Release</div>
+                        </div>
+                        <div class="calendar-item">
+                            <div class="date">Feb 15</div>
+                            <div class="event">GDP Q4 2024</div>
+                        </div>
+                        <div class="calendar-item">
+                            <div class="date">Mar 10</div>
+                            <div class="event">Trade Balance</div>
+                        </div>
+                        <div class="calendar-item">
+                            <div class="date">Mar 25</div>
+                            <div class="event">SBP Monetary Policy</div>
+                        </div>
+                        <div class="calendar-item">
+                            <div class="date">Apr 1</div>
+                            <div class="event">Budget FY25 Review</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GDP Tab -->
+            <div class="tab-content" id="gdp">
+                <h2>GDP and Economic Output</h2>
+                
+                <div class="charts-container">
+                    <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/3141c0bba7b071a6b46c80a8a4761ca2/18a2553b-fe45-416f-83ca-78901fc9121d/0a170339.png" alt="Pakistan GDP Analysis" class="section-chart">
+                </div>
+
+                <div class="data-table-container">
+                    <h3>Annual GDP Data (2015-2024)</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Metric</th>
+                                <th>2015</th>
+                                <th>2016</th>
+                                <th>2017</th>
+                                <th>2018</th>
+                                <th>2019</th>
+                                <th>2020</th>
+                                <th>2021</th>
+                                <th>2022</th>
+                                <th>2023</th>
+                                <th>2024</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nominal GDP ($B)</td>
+                                <td>271.0</td>
+                                <td>278.0</td>
+                                <td>315.0</td>
+                                <td>355.0</td>
+                                <td>278.2</td>
+                                <td>263.7</td>
+                                <td>347.7</td>
+                                <td>374.9</td>
+                                <td>341.3</td>
+                                <td>411.0</td>
+                            </tr>
+                            <tr>
+                                <td>Real GDP Growth (%)</td>
+                                <td>4.1</td>
+                                <td>4.6</td>
+                                <td>5.2</td>
+                                <td>5.8</td>
+                                <td>1.9</td>
+                                <td>-0.9</td>
+                                <td>5.7</td>
+                                <td>6.0</td>
+                                <td>-0.2</td>
+                                <td>2.5</td>
+                            </tr>
+                            <tr>
+                                <td>Agriculture (%)</td>
+                                <td>25.2</td>
+                                <td>24.5</td>
+                                <td>24.1</td>
+                                <td>23.4</td>
+                                <td>22.7</td>
+                                <td>22.9</td>
+                                <td>23.0</td>
+                                <td>23.2</td>
+                                <td>24.0</td>
+                                <td>24.0</td>
+                            </tr>
+                            <tr>
+                                <td>Industry (%)</td>
+                                <td>20.9</td>
+                                <td>20.1</td>
+                                <td>19.8</td>
+                                <td>19.3</td>
+                                <td>19.1</td>
+                                <td>18.9</td>
+                                <td>18.6</td>
+                                <td>18.4</td>
+                                <td>18.3</td>
+                                <td>18.2</td>
+                            </tr>
+                            <tr>
+                                <td>Services (%)</td>
+                                <td>53.9</td>
+                                <td>55.4</td>
+                                <td>56.1</td>
+                                <td>57.3</td>
+                                <td>58.2</td>
+                                <td>58.2</td>
+                                <td>58.4</td>
+                                <td>58.4</td>
+                                <td>57.7</td>
+                                <td>57.8</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="data-source">Source: State Bank of Pakistan, Pakistan Bureau of Statistics</p>
+                </div>
+
+                <div class="analysis-text">
+                    <h3>GDP Analysis</h3>
+                    <p>Pakistan's GDP trajectory over the past decade reflects the economy's inherent volatility and resilience to external shocks. The nominal GDP reached its peak of $411.0 billion in 2024, representing a strong recovery from the 2023 contraction. The economy demonstrated remarkable growth momentum between 2017-2018, with real GDP expanding at 5.2% and 5.8% respectively, driven by infrastructure investments under the China-Pakistan Economic Corridor (CPEC) and improved security conditions.</p>
+                    
+                    <p>The sectoral composition reveals a gradual structural transformation toward a service-oriented economy. Services now account for 57.8% of GDP, up from 53.9% in 2015, reflecting Pakistan's integration into global value chains and growing domestic consumption. Agriculture's share has stabilized around 24%, providing crucial stability during crisis periods, while industry's contribution has declined from 20.9% to 18.2%, indicating deindustrialization pressures that warrant policy attention.</p>
+                    
+                    <p>The 2019-2020 period marked a significant inflection point, with growth slowing to 1.9% in 2019 and contracting by -0.9% in 2020 due to IMF-mandated fiscal consolidation and COVID-19 impacts. However, the economy rebounded strongly in 2021-2022 with growth rates of 5.7% and 6.0%, demonstrating underlying resilience. The 2023 contraction of -0.2% was primarily driven by external sector constraints and import compression, rather than fundamental structural weaknesses.</p>
+                    
+                    <p>According to the State Bank of Pakistan's latest monetary policy statement, the central bank expects GDP growth to normalize at 2.5-3.5% over the medium term, supported by stabilizing external conditions and ongoing structural reforms under the Extended Fund Facility. The Ministry of Finance projects that industrial recovery and agricultural productivity improvements will support sustainable growth momentum going forward.</p>
+                </div>
+            </div>
+
+            <!-- Inflation Tab -->
+            <div class="tab-content" id="inflation">
+                <h2>Inflation and Price Trends</h2>
+                
+                <div class="charts-container">
+                    <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/3141c0bba7b071a6b46c80a8a4761ca2/8c57ff60-a565-42ad-81b7-75229df9a89d/f033cc3e.png" alt="Pakistan Inflation Analysis" class="section-chart">
+                </div>
+
+                <div class="data-table-container">
+                    <h3>Annual Inflation Data (2015-2024)</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Metric</th>
+                                <th>2015</th>
+                                <th>2016</th>
+                                <th>2017</th>
+                                <th>2018</th>
+                                <th>2019</th>
+                                <th>2020</th>
+                                <th>2021</th>
+                                <th>2022</th>
+                                <th>2023</th>
+                                <th>2024</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Headline CPI (%)</td>
+                                <td>4.5</td>
+                                <td>2.9</td>
+                                <td>4.2</td>
+                                <td>3.9</td>
+                                <td>6.8</td>
+                                <td>10.7</td>
+                                <td>8.9</td>
+                                <td>12.2</td>
+                                <td>29.2</td>
+                                <td>4.1</td>
+                            </tr>
+                            <tr>
+                                <td>Core CPI (%)</td>
+                                <td>5.2</td>
+                                <td>4.8</td>
+                                <td>5.1</td>
+                                <td>5.8</td>
+                                <td>8.5</td>
+                                <td>7.9</td>
+                                <td>6.5</td>
+                                <td>10.1</td>
+                                <td>18.4</td>
+                                <td>9.7</td>
+                            </tr>
+                            <tr>
+                                <td>Policy Rate (%)</td>
+                                <td>6.0</td>
+                                <td>5.75</td>
+                                <td>5.75</td>
+                                <td>6.25</td>
+                                <td>13.25</td>
+                                <td>7.0</td>
+                                <td>7.25</td>
+                                <td>16.0</td>
+                                <td>22.0</td>
+                                <td>13.0</td>
+                            </tr>
+                            <tr>
+                                <td>Target Range</td>
+                                <td>5-7%</td>
+                                <td>5-7%</td>
+                                <td>5-7%</td>
+                                <td>5-7%</td>
+                                <td>5-7%</td>
+                                <td>5-7%</td>
+                                <td>5-7%</td>
+                                <td>5-7%</td>
+                                <td>5-7%</td>
+                                <td>5-7%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="data-source">Source: Pakistan Bureau of Statistics, State Bank of Pakistan</p>
+                </div>
+
+                <div class="analysis-text">
+                    <h3>Inflation Analysis</h3>
+                    <p>Pakistan's inflation trajectory presents a tale of two distinct phases: the prolonged period of moderate inflation from 2015-2022, followed by the acute inflationary shock of 2023 and subsequent rapid disinflation. The headline CPI surge to 29.2% in 2023 represented one of the highest inflation rates globally, driven primarily by currency depreciation, supply-side disruptions, and expansionary fiscal policies during the external crisis.</p>
+                    
+                    <p>The inflation spike was broad-based but particularly severe in food and energy components. Core CPI, which excludes volatile items, reached 18.4% in 2023, indicating that inflationary pressures were deeply embedded across the economy. The persistence of core inflation above headline inflation during 2015-2019 suggested underlying demand pressures and structural rigidities in the economy. However, the dramatic reversal in 2024, with headline inflation falling to 4.1% while core remained elevated at 9.7%, reflects the dominance of base effects and energy price normalization.</p>
+                    
+                    <p>Supply-side factors played a crucial role throughout the period. Import restrictions imposed during the foreign exchange crisis contributed to domestic shortages and price pressures. Additionally, frequent adjustments in administered prices, particularly fuel and electricity tariffs mandated under IMF programs, created recurring inflationary impulses. The Pakistan Bureau of Statistics data shows that housing and utilities inflation remained persistently elevated, reflecting structural supply constraints in these sectors.</p>
+                    
+                    <p>The State Bank of Pakistan's aggressive monetary response, raising policy rates from 7.25% to 22.0%, was instrumental in anchoring inflation expectations and restoring credibility. The central bank's latest Monetary Policy Statement indicates that inflation expectations have normalized significantly, with forward-looking indicators suggesting convergence toward the 5-7% target range by mid-2025. However, risks remain from potential fiscal slippages and external price shocks, requiring continued vigilance from policymakers.</p>
+                </div>
+            </div>
+
+            <!-- Monetary Policy Tab -->
+            <div class="tab-content" id="monetary">
+                <h2>Monetary Policy Analysis</h2>
+                
+                <div class="policy-snapshot">
+                    <h3>Current Policy Snapshot</h3>
+                    <div class="snapshot-grid">
+                        <div class="snapshot-item">
+                            <span class="label">Current Policy Rate</span>
+                            <span class="value">11.0%</span>
+                        </div>
+                        <div class="snapshot-item">
+                            <span class="label">Last Change</span>
+                            <span class="value">Dec 2024: -200bps</span>
+                        </div>
+                        <div class="snapshot-item">
+                            <span class="label">Real Interest Rate</span>
+                            <span class="value">6.9%</span>
+                        </div>
+                        <div class="snapshot-item">
+                            <span class="label">10Y Bond Yield</span>
+                            <span class="value">12.06%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chart-container" style="position: relative; height: 400px;">
+                    <canvas id="yieldCurveChart"></canvas>
+                </div>
+
+                <div class="analysis-text">
+                    <h3>Monetary Policy Stance</h3>
+                    <p>The State Bank of Pakistan has navigated one of the most challenging monetary policy environments in its history, implementing aggressive tightening during the 2022-2023 crisis before transitioning to gradual easing in 2024. The policy rate peaked at 22.0% in May 2023, representing the highest level since the bank's inception, as policymakers sought to restore macroeconomic stability and anchor inflation expectations amid acute external pressures.</p>
+                    
+                    <p>The central bank's forward guidance has emphasized a data-dependent approach to policy normalization. With headline inflation falling dramatically to 4.1% and core inflation showing signs of deceleration, the SBP initiated an easing cycle in June 2024, reducing rates by 450 basis points to 11.0% by year-end. The Monetary Policy Committee's latest statement highlights improved inflation expectations, strengthening external accounts, and stabilizing currency as key factors supporting the easing stance.</p>
+                    
+                    <p>Liquidity management has been another critical dimension of monetary policy. The central bank maintained tight liquidity conditions throughout 2023 through open market operations and higher reserve requirements. However, with improving external conditions and increased foreign currency inflows, the SBP has gradually normalized liquidity conditions, supporting credit growth recovery. The real interest rate remains elevated at approximately 6.9%, providing continued anti-inflationary anchor while supporting external stability.</p>
+                    
+                    <p>Looking ahead, the SBP's monetary policy framework emphasizes flexible inflation targeting within the 5-7% range over the medium term. The central bank has signaled continued gradual easing, contingent on sustained disinflation and external stability. However, risks from potential fiscal slippages, global commodity price volatility, and geopolitical tensions require maintaining policy flexibility and readiness to adjust the stance as conditions evolve.</p>
+                </div>
+            </div>
+
+            <!-- Labor Market Tab -->
+            <div class="tab-content" id="labor">
+                <h2>Labor Market Dynamics</h2>
+                
+                <div class="data-table-container">
+                    <h3>Labor Market Indicators</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Metric</th>
+                                <th>2018</th>
+                                <th>2019</th>
+                                <th>2021</th>
+                                <th>2024</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Unemployment Rate (%)</td>
+                                <td>7.2</td>
+                                <td>6.9</td>
+                                <td>6.3</td>
+                                <td>5.5</td>
+                            </tr>
+                            <tr>
+                                <td>Labor Force Participation (%)</td>
+                                <td>31.6</td>
+                                <td>32.1</td>
+                                <td>32.3</td>
+                                <td>32.5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="data-source">Source: Pakistan Bureau of Statistics, Labour Force Survey</p>
+                </div>
+
+                <div class="analysis-text">
+                    <h3>Labor Market Analysis</h3>
+                    <p>Pakistan's labor market has shown gradual improvement over recent years, with unemployment declining from 7.2% in 2018 to 5.5% in 2024. This improvement reflects the economy's resilience and job creation capacity despite external sector volatility. The decline in unemployment has been accompanied by modest increases in labor force participation, rising from 31.6% to 32.5% over the same period, though participation remains low by international standards, particularly for women.</p>
+                    
+                    <p>The labor market's structure remains dominated by informal employment, with agriculture and services sectors absorbing the majority of the workforce. The Pakistan Bureau of Statistics indicates that youth unemployment remains elevated, presenting ongoing challenges for policymakers. Skills mismatches and limited industrial employment opportunities continue to constrain formal job creation, despite the economy's overall growth trajectory.</p>
+                    
+                    <p>Wage dynamics have been influenced by inflationary pressures and productivity trends. While comprehensive wage data is limited, anecdotal evidence from the State Bank's surveys suggests that nominal wage growth accelerated during the high inflation period of 2022-2023 but remained below inflation rates, implying real wage compression. The normalization of inflation in 2024 is expected to support real wage recovery, contingent on continued economic stability.</p>
+                    
+                    <p>Demographic trends present both opportunities and challenges for Pakistan's labor market. With approximately 64% of the population under 30 years of age, the country faces the challenge of creating sufficient employment opportunities for a rapidly growing workforce. However, this demographic dividend also represents a significant growth opportunity if supported by appropriate education, skills development, and job creation policies. The government's focus on digitalization and export-oriented industries aims to leverage this demographic advantage while addressing structural employment challenges.</p>
+                </div>
+            </div>
+
+            <!-- Fiscal Tab -->
+            <div class="tab-content" id="fiscal">
+                <h2>Fiscal Position and Debt</h2>
+                
+                <div class="data-table-container">
+                    <h3>Fiscal Indicators (2015-2024)</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Metric</th>
+                                <th>2015</th>
+                                <th>2016</th>
+                                <th>2017</th>
+                                <th>2018</th>
+                                <th>2019</th>
+                                <th>2020</th>
+                                <th>2021</th>
+                                <th>2022</th>
+                                <th>2023</th>
+                                <th>2024</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Fiscal Balance (% GDP)</td>
+                                <td>-5.3</td>
+                                <td>-4.6</td>
+                                <td>-5.8</td>
+                                <td>-6.4</td>
+                                <td>-8.9</td>
+                                <td>-7.1</td>
+                                <td>-7.2</td>
+                                <td>-7.9</td>
+                                <td>-7.4</td>
+                                <td>-6.8</td>
+                            </tr>
+                            <tr>
+                                <td>Public Debt (% GDP)</td>
+                                <td>63.8</td>
+                                <td>67.6</td>
+                                <td>72.5</td>
+                                <td>89.1</td>
+                                <td>87.2</td>
+                                <td>91.7</td>
+                                <td>89.0</td>
+                                <td>89.2</td>
+                                <td>91.0</td>
+                                <td>80.0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="data-source">Source: Ministry of Finance, State Bank of Pakistan</p>
+                </div>
+
+                <div class="analysis-text">
+                    <h3>Fiscal Analysis</h3>
+                    <p>Pakistan's fiscal position has remained under persistent strain over the past decade, with the fiscal deficit averaging 6.8% of GDP since 2015. The deficit peaked at -8.9% in 2019 during the previous IMF program and has shown modest improvement to -6.8% in 2024, though it remains well above sustainable levels. The Ministry of Finance's latest fiscal accounts indicate that revenue mobilization remains weak, with tax-to-GDP ratios among the lowest globally, while expenditure pressures from debt servicing and subsidies continue to constrain fiscal space.</p>
+                    
+                    <p>Public debt dynamics present a critical vulnerability, with debt-to-GDP ratios rising from 63.8% in 2015 to a peak of 91.7% in 2020. While the ratio declined to 80.0% in 2024, this improvement primarily reflects nominal GDP growth rather than absolute debt reduction. The composition of debt has shifted toward expensive domestic borrowing during periods of external stress, increasing debt servicing costs. Interest payments now consume approximately 45% of total revenues, severely limiting the government's fiscal maneuverability.</p>
+                    
+                    <p>The current Extended Fund Facility with the IMF mandates ambitious fiscal consolidation targets, aiming to reduce the primary deficit to 0.4% of GDP by FY2027. Key reform measures include broadening the tax base, eliminating energy subsidies, and improving public financial management. However, implementation risks remain high given Pakistan's history of fiscal slippages and political economy constraints. The Federal Board of Revenue's efforts to digitize tax collection and expand the taxpayer base represent crucial steps toward sustainable fiscal consolidation.</p>
+                    
+                    <p>Debt sustainability analysis by the IMF and World Bank indicates that Pakistan's debt remains sustainable under the baseline scenario but is vulnerable to shocks. The government's Debt Policy Statement emphasizes lengthening debt maturity profiles and increasing reliance on concessional financing. However, achieving debt sustainability will require sustained primary surpluses and structural reforms to boost growth potential, presenting significant implementation challenges for policymakers.</p>
+                </div>
+            </div>
+
+            <!-- External Sector Tab -->
+            <div class="tab-content" id="external">
+                <h2>External Sector Analysis</h2>
+                
+                <div class="charts-container">
+                    <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/3141c0bba7b071a6b46c80a8a4761ca2/211b62d6-909c-45cc-98df-a878f332b76a/a5842c90.png" alt="Pakistan External Sector" class="section-chart">
+                </div>
+
+                <div class="data-table-container">
+                    <h3>External Sector Data (2015-2024)</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Metric</th>
+                                <th>2015</th>
+                                <th>2016</th>
+                                <th>2017</th>
+                                <th>2018</th>
+                                <th>2019</th>
+                                <th>2020</th>
+                                <th>2021</th>
+                                <th>2022</th>
+                                <th>2023</th>
+                                <th>2024</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Current Account ($B)</td>
+                                <td>-2.5</td>
+                                <td>-4.9</td>
+                                <td>-12.4</td>
+                                <td>-19.9</td>
+                                <td>-13.4</td>
+                                <td>-1.5</td>
+                                <td>-17.4</td>
+                                <td>-17.5</td>
+                                <td>-3.3</td>
+                                <td>1.5</td>
+                            </tr>
+                            <tr>
+                                <td>FX Reserves ($B)</td>
+                                <td>20.0</td>
+                                <td>24.0</td>
+                                <td>16.1</td>
+                                <td>9.8</td>
+                                <td>7.2</td>
+                                <td>12.9</td>
+                                <td>17.3</td>
+                                <td>4.6</td>
+                                <td>8.0</td>
+                                <td>14.5</td>
+                            </tr>
+                            <tr>
+                                <td>Exchange Rate (PKR/$)</td>
+                                <td>102</td>
+                                <td>104</td>
+                                <td>105</td>
+                                <td>122</td>
+                                <td>155</td>
+                                <td>161</td>
+                                <td>162</td>
+                                <td>205</td>
+                                <td>287</td>
+                                <td>278</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="data-source">Source: State Bank of Pakistan, Ministry of Commerce</p>
+                </div>
+
+                <div class="analysis-text">
+                    <h3>External Sector Analysis</h3>
+                    <p>Pakistan's external sector has been the primary source of macroeconomic volatility over the past decade, characterized by recurring balance of payments crises and structural imbalances. The current account deficit reached unsustainable levels of $19.9 billion (5.6% of GDP) in 2018, forcing the country to seek IMF assistance. However, the achievement of a current account surplus of $1.5 billion in 2024 represents a remarkable turnaround, driven by compressed imports, resilient remittances, and improved export performance.</p>
+                    
+                    <p>Foreign exchange reserves have exhibited extreme volatility, falling from $24.0 billion in 2016 to critically low levels of $4.6 billion in 2022, equivalent to less than one month of imports. This reserve depletion forced severe import restrictions and contributed to domestic shortages and inflationary pressures. The recovery to $14.5 billion by 2024, while substantial, still provides limited import cover of approximately 2.5 months. The State Bank of Pakistan targets reserve accumulation to 3-4 months of import cover over the medium term.</p>
+                    
+                    <p>Currency stability remains a key challenge, with the Pakistani rupee depreciating from PKR 102/$ in 2015 to PKR 278/$ in 2024, representing a cumulative depreciation of 172%. The sharp depreciation during 2022-2023, from PKR 162/$ to PKR 287/$, reflected acute foreign exchange shortages and loss of confidence. The subsequent stabilization around PKR 278/$ in 2024 indicates restored market confidence and improved external balances, though the currency remains vulnerable to external shocks.</p>
+                    
+                    <p>Trade dynamics show persistent structural challenges, with imports consistently exceeding exports by significant margins. The State Bank's data reveals that energy imports constitute approximately 25-30% of total imports, making the country vulnerable to global commodity price shocks. Export diversification remains limited, with textiles accounting for over 60% of merchandise exports. The government's export promotion policies and focus on value-added sectors aim to address these structural weaknesses, though progress has been gradual. Capital flows, including worker remittances averaging $30-31 billion annually, provide crucial external financing, though their volatility adds to external sector uncertainty.</p>
+                </div>
+            </div>
+
+            <!-- Financial Conditions Tab -->
+            <div class="tab-content" id="financial">
+                <h2>Financial Conditions</h2>
+                
+                <div class="financial-indicators">
+                    <h3>Key Financial Indicators (Latest Available)</h3>
+                    <div class="indicators-grid">
+                        <div class="indicator-card">
+                            <span class="label">NPL Ratio</span>
+                            <span class="value">6.3%</span>
+                        </div>
+                        <div class="indicator-card">
+                            <span class="label">Credit Growth</span>
+                            <span class="value">35.8%</span>
+                        </div>
+                        <div class="indicator-card">
+                            <span class="label">KSE-100 YTD</span>
+                            <span class="value">+84%</span>
+                        </div>
+                        <div class="indicator-card">
+                            <span class="label">10Y Bond Yield</span>
+                            <span class="value">12.06%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="analysis-text">
+                    <h3>Financial System Assessment</h3>
+                    <p>Pakistan's financial system has demonstrated remarkable resilience during the recent macroeconomic crisis, with banking sector indicators showing stable performance despite challenging operating conditions. The non-performing loan (NPL) ratio of 6.3% remains within manageable levels, though elevated compared to regional peers. State Bank of Pakistan's Financial Stability Review indicates that banks maintained adequate capital buffers throughout the crisis period, with the sector-wide Capital Adequacy Ratio remaining above the regulatory minimum of 11.5%.</p>
+                    
+                    <p>Credit market conditions have normalized significantly following the acute liquidity stress of 2022-2023. Private sector credit growth surged to 35.8% in 2024, reflecting both base effects from the previous year's contraction and normalized monetary conditions. However, this rapid credit expansion warrants monitoring for potential asset quality deterioration. The State Bank's latest data shows that credit is primarily flowing to working capital requirements rather than fixed investment, suggesting continued caution among businesses regarding long-term commitments.</p>
+                    
+                    <p>Equity market performance has been exceptional, with the KSE-100 index gaining 84% year-to-date in 2024, making it one of the best-performing markets globally. This rally reflects improved macroeconomic stability, foreign investor interest, and attractive valuations following the 2023 correction. However, market capitalization remains modest at approximately 15% of GDP, limiting the capital market's role in financing investment. Bond market conditions have tightened, with 10-year government securities yielding 12.06%, though this represents a significant decline from peak levels above 20% during the crisis.</p>
+                    
+                    <p>Financial stability risks remain elevated despite recent improvements. The banking sector's large exposure to government securities (approximately 45% of assets) creates interest rate and crowding-out risks. Additionally, the rapid credit growth and improved risk appetite could lead to asset quality deterioration if economic conditions worsen. The State Bank continues to emphasize prudential supervision and stress testing to identify potential vulnerabilities. Overall, while financial conditions have improved markedly, the system remains vulnerable to external shocks and requires continued vigilance from regulators.</p>
+                </div>
+            </div>
+
+            <!-- Pros & Cons Tab -->
+            <div class="tab-content" id="proscons">
+                <h2>Pros & Cons</h2>
+                
+                <div class="proscons-container">
+                    <div class="pros-section">
+                        <h3 class="pros-title">Strengths</h3>
+                        <ul class="pros-list">
+                            <li>Current account achieved surplus of $1.5 billion in 2024, first positive balance since 2015</li>
+                            <li>Foreign exchange reserves recovered to $14.5 billion, providing 2.5 months of import cover</li>
+                            <li>Inflation declined dramatically from 29.2% peak to 4.1%, approaching central bank target range</li>
+                            <li>Real GDP growth recovered to 2.5% in 2024 after 2023 contraction, demonstrating economic resilience</li>
+                            <li>IMF Extended Fund Facility provides $7 billion financial backstop and policy credibility</li>
+                            <li>Banking sector NPL ratio at manageable 6.3% despite crisis pressures</li>
+                            <li>KSE-100 equity index gained 84% year-to-date, reflecting improved investor confidence</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="cons-section">
+                        <h3 class="cons-title">Concerns</h3>
+                        <ul class="cons-list">
+                            <li>Public debt at 80% of GDP remains elevated and vulnerable to shocks</li>
+                            <li>Fiscal deficit at 6.8% of GDP exceeds sustainable levels, constraining policy space</li>
+                            <li>Interest payments consume 45% of government revenues, limiting developmental spending</li>
+                            <li>Pakistani rupee depreciated 172% since 2015, reflecting persistent external imbalances</li>
+                            <li>Foreign exchange reserves provide only 2.5 months import cover, below adequate levels</li>
+                            <li>Core inflation at 9.7% remains well above headline, indicating persistent price pressures</li>
+                            <li>Industrial sector share declined from 20.9% to 18.2%, signaling deindustrialization</li>
+                            <li>Labor force participation at 32.5% remains low, particularly for women</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Outlook Tab -->
+            <div class="tab-content" id="outlook">
+                <h2>Outlook and Resilience Score</h2>
+                
+                <div class="outlook-container">
+                    <h3>Macroeconomic Outlook</h3>
+                    <p>Pakistan's macroeconomic outlook presents a cautiously optimistic trajectory, contingent on continued policy implementation and external stability. The successful navigation of the 2022-2023 crisis has restored market confidence and established a foundation for sustainable growth. With inflation normalizing, external balances improving, and financial conditions stabilizing, the economy is positioned for gradual recovery over the medium term.</p>
+                    
+                    <p>However, significant structural challenges remain that could undermine this positive trajectory. The elevated debt burden, persistent fiscal deficits, and limited foreign exchange buffers leave the economy vulnerable to external shocks. Success will depend critically on the government's ability to implement difficult structural reforms, maintain fiscal discipline, and build adequate reserve buffers. The IMF program provides important anchor effects, but sustainable improvement requires addressing underlying competitiveness and institutional weaknesses that have contributed to Pakistan's recurring balance of payments cycles.</p>
+                    
+                    <div class="resilience-score">
+                        <h3>Macro Resilience Rating</h3>
+                        <div class="score-display">
+                            <span class="score-number">2.5</span>
+                            <span class="score-label">out of 5</span>
+                        </div>
+                        <p class="score-rationale">
+                            The rating reflects Pakistan's current stabilization following acute crisis, with improvements in inflation, external balances, and financial conditions. However, elevated debt levels (80% of GDP), limited forex reserves (2.5 months import cover), persistent fiscal deficits (6.8% of GDP), and structural vulnerabilities prevent a higher score. The economy remains vulnerable to external shocks despite recent improvements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Disclaimer Tab -->
+            <div class="tab-content" id="disclaimer">
+                <h2>Disclaimer</h2>
+                
+                <div class="disclaimer-content">
+                    <h3>Data Sources and Methodology</h3>
+                    <p>All data presented in this dashboard are sourced from official and publicly available datasets, including the State Bank of Pakistan, Pakistan Bureau of Statistics, Ministry of Finance, International Monetary Fund, World Bank, and other recognized statistical authorities. Data reflect actual release dates and may differ from fiscal year adjustments or rebased figures published elsewhere.</p>
+                    
+                    <h3>Investment Disclaimer</h3>
+                    <p><strong>This content is for informational purposes only and does not constitute investment advice.</strong> The analysis presented herein is based on historical data and current information available at the time of publication. Economic conditions, policy frameworks, and market dynamics can change rapidly and materially affect the analysis and conclusions presented.</p>
+                    
+                    <p>Investors should conduct their own due diligence and consult with qualified financial advisors before making any investment decisions. Past performance is not indicative of future results, and all investments carry inherent risks including the potential loss of principal.</p>
+                    
+                    <h3>Data Limitations</h3>
+                    <p>While every effort has been made to ensure data accuracy and completeness, users should note that economic data are subject to revisions, seasonal adjustments, and methodological changes by statistical authorities. Some data series may have limited historical coverage or frequency constraints that affect comprehensive analysis.</p>
+                    
+                    <h3>Forward-Looking Statements</h3>
+                    <p>Any forward-looking statements or projections contained in this analysis are based on current information and assumptions that may prove incorrect. Actual results may differ materially from those projected due to various factors including but not limited to changes in economic conditions, policy decisions, external shocks, and market dynamics.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
